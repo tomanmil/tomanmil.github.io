@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta name="viewport"></meta>
-<title>Human trafficking_excel - Google Fusion Tables</title>
+<title>Copy of Human trafficking map - GEOMETRY - Google Fusion Tables</title>
 <style type="text/css">
 html, body, #googft-mapCanvas {
-  height: 600px;
+  height: 700px;
   margin: 0;
   padding: 0;
-  width: 900px;
+  width: 750px;
 }
 </style>
 
@@ -24,10 +24,10 @@ html, body, #googft-mapCanvas {
       viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
     }
     var mapDiv = document.getElementById('googft-mapCanvas');
-    mapDiv.style.width = isMobile ? '100%' : '900px';
-    mapDiv.style.height = isMobile ? '100%' : '600px';
+    mapDiv.style.width = isMobile ? '100%' : '750px';
+    mapDiv.style.height = isMobile ? '100%' : '700px';
     var map = new google.maps.Map(mapDiv, {
-      center: new google.maps.LatLng(37.46148753601658, -82.91695738124997),
+      center: new google.maps.LatLng(39.06397884746947, -90.46936206249995),
       zoom: 4,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -38,13 +38,13 @@ html, body, #googft-mapCanvas {
       map: map,
       heatmap: { enabled: false },
       query: {
-        select: "col0",
-        from: "1QED6npaf9ILuvKKoG4KWvmj7hQaOFM0aoopr09KI",
+        select: "col3",
+        from: "1a_K-ccx2CWL8lPF6k1ED71ogdEtpX_Uk-7yWl-h9",
         where: ""
       },
       options: {
-        styleId: 2,
-        templateId: 2
+        styleId: 3,
+        templateId: 3
       }
     });
 
@@ -73,9 +73,12 @@ html, body, #googft-mapCanvas {
 <body>
 
 <h1> This is a map of current penalties for human trafficking -- specifically, prison sentences for sex traffickers.</h1>
-<p>The big red marks correspond to 80 years-life prison sentences. The big blue marks correspond to 60-80 years. The pink dots correspond to 40-60, the green 20-40, and the yellow 0-20.
+<p>The black fill correspond to 80 years-life prison sentences. The darkest purple corresponds to 60-80 years, and the rest follow in decreasing 20 year increments with corresponding lighter shades. 
 <p>By Mary Ann Toman-Miller</p>
 
   <div id="googft-mapCanvas"></div>
 </body>
 </html>
+
+
+ 
